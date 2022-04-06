@@ -1,4 +1,5 @@
 import React from "react";
+import Filter from "../components/Filter";
 import Products from "../components/Products";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
       <div className="content">
         <div className="main">
+          <Filter />
           <Products />
         </div>
         <div className="sidebar"></div>

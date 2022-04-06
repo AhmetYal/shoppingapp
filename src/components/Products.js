@@ -1,9 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { products } from "../data";
 import { Link } from "react-router-dom";
 
 const Products = () => {
   const [product, setProduct] = useState(products);
+
+  // useEffect(() => {
+  //   if (sort === "newest") {
+  //     setFilteredProducts((prev) =>
+  //       [...prev].sort((a, b) => a.createdAt - b.createdAt)
+  //     );
+  //   } else if (sort === "asc") {
+  //     setFilteredProducts((prev) =>
+  //       [...prev].sort((a, b) => a.price - b.price)
+  //     );
+  //   } else {
+  //     setFilteredProducts((prev) =>
+  //       [...prev].sort((a, b) => b.price - a.price)
+  //     );
+  //   }
+  // }, []);
+
   return (
     <div>
       <ul className="products">
