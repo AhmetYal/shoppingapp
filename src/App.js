@@ -1,14 +1,13 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="grid-container">
-      <header>
-        <Link to="/"> React Shopping Cart</Link>
-        <Link to="/admin"> Admin</Link>
-      </header>
+      <Navbar />
       <main></main>
-      <footer>All rights reserved</footer>
+      <Footer />
     </div>
   );
 }
